@@ -8,4 +8,33 @@
 
 body {
   font-family: 'augiepixel', sans-serif;
+  font-size: 3rem;
+}
+
+button {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+
+  background-color: #2563eb;
+  color: #fff;
+  font-family: inherit;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 0.6em 1.2em;
+  border-radius: 20px;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 3px;
 }
