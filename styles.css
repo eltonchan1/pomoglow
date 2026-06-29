@@ -9,20 +9,128 @@
 body {
   font-family: 'augiepixel', sans-serif;
   font-size: 3rem;
+  color: #fffffc;
+  background-image: url('assets/nightsky.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.pomoglow-title {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin: 0;
+  font-size: 2rem;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+  padding-top: 20px;
+}
+
+.header-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.jar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
+
+.jar-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.controls {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  z-index: 999;
+}
+
+.firefly-counter {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #2563eb;
+  color: #fffffc;
+  padding: 0.25em 0.5em 0.25em 0.5em;
+  border-radius: 20px;
+  font-size: 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.counter-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: block;
+}
+
+.session-type {
+  font-size: 5rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.timer-display {
+  font-size: 7rem;
+  margin: 0;
 }
 
 button {
   appearance: none;
   border: none;
   cursor: pointer;
-
   background-color: #2563eb;
-  color: #fff;
+  color: #fffffc;
   font-family: inherit;
   font-size: 3rem;
   font-weight: 600;
-  padding: 0.6em 1.2em;
+  padding: 0.25em 0.5em 0.1em 0.5em;
   border-radius: 20px;
+  width: 80px;
+  height: 80px;
   transition: background-color 0.15s ease, transform 0.1s ease;
 }
 
@@ -37,4 +145,95 @@ button:active {
 button:focus-visible {
   outline: 2px solid #2563eb;
   outline-offset: 3px;
+}
+
+.settings-menu {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #1f2937;
+  border-radius: 15px;
+  padding: 20px;
+  z-index: 1000;
+  min-width: 280px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.settings-menu.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.settings-content h3 {
+  margin: 0 0 20px 0;
+  color: #fffffc;
+  font-size: 1.75rem;
+}
+
+.setting-item {
+  margin-bottom: 20px;
+  color: #fffffc;
+}
+
+.setting-item label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.setting-item input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 1.5rem;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  background-color: #111827;
+  color: #fffffc;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.setting-item input[type="checkbox"] {
+  margin-right: 10px;
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.close-settings {
+  width: 100%;
+  padding: 0.8em 1.2em;
+  font-size: 1.5rem;
+}
+
+.settings-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.start-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.pause-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.reset-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.skip-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.jar-image {
+  width: auto;
+  height: auto;
+  display: block;
 }
