@@ -10,6 +10,8 @@ also w3schools carried me as well tysm
 <br>
 basically this is a pomodoro website but made so that when youre focusing fireflies get added to your jar (i used to catch fireflies a lot as a kid so id consider it whimsy)
 <br>
+one firefly spawns after 5 seconds
+<br>
 when you go on break, the jar opens and releases the fireflies, which gets you points (stored in local browser storage)
 <br>
 you can adjust the time that you focus/break
