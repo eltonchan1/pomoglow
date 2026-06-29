@@ -95,7 +95,7 @@ function spawnFirefly() {
 	];
 	const chosenFirefly = fireflyVariants[Math.floor(Math.random() * fireflyVariants.length)];
 	const firefly = document.createElement('img');
-	firefly.src = `/assets/${chosenFirefly}`;
+	firefly.src = `assets/${encodeURIComponent(chosenFirefly)}`;
 	firefly.className = 'firefly';
 	firefly.style.position = 'absolute';
 	firefly.style.width = '100px';
