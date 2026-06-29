@@ -13,3 +13,6 @@ basically this is a pomodoro website but made so that when youre focusing firefl
 when you go on break, the jar opens and releases the fireflies, which gets you points (stored in local browser storage)
 <br>
 you can adjust the time that you focus/break
+<br>
+<br>
+note: if the site looks broken pls do a hard refresh (ctrl + shift + r)
