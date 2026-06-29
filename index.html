@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>pomoglow</title>
+		<meta name="description" content="Simple Pomodoro Timer">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>pomoglow</h1>
+			
+			<div class="session-type" id="sessionType">work session</div>
+			
+			<div class="timer-display" id="timerDisplay">25:00</div>
+			
+			<div class="controls">
+				<button id="startBtn" class="btn btn-primary">start</button>
+				<button id="pauseBtn" class="btn btn-secondary" disabled>pause</button>
+				<button id="resetBtn" class="btn btn-secondary">reset</button>
+			</div>
+			
+			<div class="sessions-counter">
+				<p>sessions completed: <span id="sessionsCompleted">0</span></p>
+			</div>
+		</div>
+        <script src="script.js"></script>
+	</body>
+</html>
