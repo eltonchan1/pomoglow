@@ -40,7 +40,7 @@ function switchSession() {
 	timeLeft = isWorkSession ? WORK_MINUTES * 60 : BREAK_MINUTES * 60;
 	sessionType.textContent = isWorkSession ? 'focus' : 'break';
 	document.body.className = isWorkSession ? 'work-session' : 'break-session';
-	jarImage.src = isWorkSession ? '/assets/jar.png' : '/assets/jaropen.png';
+	jarImage.src = isWorkSession ? 'assets/jar.png' : 'assets/jaropen.png';
 
 	const fireflies = jarContainer.querySelectorAll('.firefly');
 	fireflies.forEach(firefly => {
